@@ -70,7 +70,7 @@ Note for the last item: the tooltip not only shows in list mode but also in tree
 * This is verified **except I do not see "lock" and "unlock"**
 
 >  * Context menu  
->    Copy to clipboard (amount,label,address,transaction id,lock,unlock)[/list]
+>    Copy to clipboard (amount,label,address,transaction id,lock,unlock)
 
 These labels are tested **except I cannot verify priorities because I do not know how priority levels are assigned**. 
 
@@ -130,7 +130,7 @@ Low Output is yes when the amount is less than 0.01 PPC.
 
 
 ### Summary
-The coin control implmented in peerunity_coin-control passed tests of all main function items [specified by cozz](https://bitcointalk.org/index.php?topic=144331.0). Three minor items did not pass test, and one untested item, are marked in bold above.
+The coin control implmented in peerunity_coin-control passed tests of all main function items [specified by cozz](https://bitcointalk.org/index.php?topic=144331.0). Three minor items that did not pass, and one untested item, are marked in bold above.
 
 mhps
 2014-04-22
