@@ -3,11 +3,20 @@ Test report for the coin control function of Peerunity
 
 This report covers test results of the coin control feature of Peerunity v0.4.0 released [here](http://www.peercointalk.org/index.php?topic=2648.msg23426#msg23426)
 
-The test follows the list of functions specified in [_Yet another Coin Control Release_ by cozz](https://bitcointalk.org/index.php?topic=144331.0).
+The test follows the list of functions specified in [_Yet another Coin Control Release_ by cozz](https://bitcointalk.org/index.php?topic=144331.0). Basic test method is clicking/typing on the GUI of Peerunity running on Peercoin testnet.
 
 The tests are done on windows 7 professional 32bit. Peerunity distribution peerunity-rc.zip is downloaded and unzip'ped in D:\bin
 
-Run peerunity with a bat file with the command
+There are three addressed used in the test 
+   | name | address | initial balance |
+   | ----- | --------- | ---------------- |
+   | test1 | mkLh7wYGYQiKVm8tLwCs9LusKF2y1gffm9 | 8.01PPC |
+   | test2 | n2LzA1UH46QZPdCGvN2NorPeqg1BbTuw4g | 2PPC |
+   | test3 | mpRAV4VSsxmKh5nRpDuQPquhdHPKu4xUuS | 7PPC |
+
+### start peerunity
+
+* Run peerunity with a bat file with the command
 ```
 D:\bin\peerunity-rc\peerunity-rc-qt -conf=D:\bin\peerunity-rc\ppcoin.conf
 ```
@@ -23,17 +32,6 @@ genproclimit=1
 daemon=1
 ```
 (Note for future upgrade: with 0.9.1 btc wallet, datadir must be specified in the command line, not in the config file)
-
-Coins and accounts:
-
-There are three addressed used in the test 
-   | name | address | initial balance |
-   | -----|---------|---------------- |
-   | test1 | mkLh7wYGYQiKVm8tLwCs9LusKF2y1gffm9 | 8.01PPC |
-   | test2 | n2LzA1UH46QZPdCGvN2NorPeqg1BbTuw4g | 2PPC |
-   | test3 | mpRAV4VSsxmKh5nRpDuQPquhdHPKu4xUuS | 7PPC |
-
-### start peerunity
 
 * peerunity-rc is started and successfully syncs with the testnet.
 * In the debug window, Information tab, "On testnet" box is in checked state. "D:\bin\peerunity-rc\testnet" subdirectory is created with downloaded block chain.
