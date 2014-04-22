@@ -3,11 +3,12 @@ Test report for the coin control function of Peerunity
 
 This report covers test results of the coin control feature of Peerunity v0.4.0 released [here](http://www.peercointalk.org/index.php?topic=2648.msg23426#msg23426)
 
-The test follows the list of functions specified in [_Yet another Coin Control Release_ by cozz](https://bitcointalk.org/index.php?topic=144331.0). Basic test method is clicking/typing on the GUI of Peerunity running on Peercoin testnet.
+The test method used is basically clicking/typing on the GUI of Peerunity running on Peercoin testnet and comparing the results with those specified in [_Yet another Coin Control Release_ by cozz](https://bitcointalk.org/index.php?topic=144331.0).
 
 The tests are done on windows 7 professional 32bit. Peerunity distribution peerunity-rc.zip is downloaded and unzip'ped in D:\bin
 
 There are three addressed used in the test 
+
    | name | address | initial balance |
    | ----- | --------- | ---------------- |
    | test1 | mkLh7wYGYQiKVm8tLwCs9LusKF2y1gffm9 | 8.01PPC |
@@ -16,7 +17,7 @@ There are three addressed used in the test
 
 ### start peerunity
 
-* Run peerunity with a bat file with the command
+* Run peerunity with a bat file that has the command
 ```
 D:\bin\peerunity-rc\peerunity-rc-qt -conf=D:\bin\peerunity-rc\ppcoin.conf
 ```
@@ -43,12 +44,11 @@ daemon=1
 ```
 _Main_
    * Settings checkbox "Display coin control features (experts only!)" (default=no)
-    Tab Send coins
-    Button Inputs 
-    click on this button opens actual coin control dialog. If no Inputs are selected "automatically selected" is shown.
-
+_Tab Send coins_
+   * Button Inputs 
+     ..* click on this button opens actual coin control dialog. If no Inputs are selected "automatically selected" is shown.
    * Change Checkbox
-    checked -> provide custom change address
+     ..* checked -> provide custom change address
 ```
 
 * Send 3 PPC from faucet2 to faucet1 to 1) create change 2) to confirm if in coin control, if no boxes
