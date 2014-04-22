@@ -1,11 +1,7 @@
-Test report for the coin control function of Peerunity
+Testing the coin control feature of Peerunity
 ===================================================
 
-This report covers test results of the coin control feature of Peerunity v0.4.0 released [here](http://www.peercointalk.org/index.php?topic=2648.msg23426#msg23426)
-
-The test method used is basically clicking/typing on the GUI of Peerunity running on Peercoin testnet and comparing the results with those specified in [_Yet another Coin Control Release_ by cozz](https://bitcointalk.org/index.php?topic=144331.0).
-
-The tests are done on windows 7 professional 32bit. Peerunity distribution peerunity-rc.zip is downloaded and unzip'ped in D:\bin
+This report covers test results of the coin control feature of Peerunity v0.4.0 released [here](http://www.peercointalk.org/index.php?topic=2648.msg23426#msg23426). The test method used is basically clicking/typing on the GUI of Peerunity running on Peercoin testnet, and comparing the results with those specified in [_Yet another Coin Control Release_ by cozz](https://bitcointalk.org/index.php?topic=144331.0). The tests are done on windows 7 professional 32bit. Peerunity distribution peerunity-rc.zip is downloaded and unzip'ped in D:\bin
 
 There are three addressed used in the test 
 
@@ -21,7 +17,7 @@ There are three addressed used in the test
 ```
 D:\bin\peerunity-rc\peerunity-rc-qt -conf=D:\bin\peerunity-rc\ppcoin.conf
 ```
-The config file D:\bin\peerunity-rc\ppcoin.conf has
+The config file D:\bin\peerunity-rc\ppcoin.conf contains
 ```
 datadir=D:\bin\peerunity-rc
 testnet=1
@@ -34,22 +30,22 @@ daemon=1
 ```
 (Note for future upgrade: with 0.9.1 btc wallet, datadir must be specified in the command line, not in the config file)
 
-* peerunity-rc is started and successfully syncs with the testnet.
-* In the debug window, Information tab, "On testnet" box is in checked state. "D:\bin\peerunity-rc\testnet" subdirectory is created with downloaded block chain.
+* peerunity-rc is started. In the debug window, Information tab, "On testnet" box is in checked state. 
+* peerunit-rc successfully syncs with the testnet. "D:\bin\peerunity-rc\testnet" subdirectory is created with downloaded block chain.
 
 ### start coin control
 
 * In settings->options->display check "Display coin control features (expert only!)".
-* These GUI functions are verified (Setting up a custom change address and check if it works not tested)
-```
-_Main_
-   * Settings checkbox "Display coin control features (experts only!)" (default=no)
-_Tab Send coins_
-   * Button Inputs 
-     ..* click on this button opens actual coin control dialog. If no Inputs are selected "automatically selected" is shown.
-   * Change Checkbox
-     ..* checked -> provide custom change address
-```
+* The following GUI functions are verified (I did not check if custom change address works)
+
+> _Main_
+>   * Settings checkbox "Display coin control features (experts only!)" (default=no)
+> _Tab Send coins_
+>   * Button Inputs 
+>     ..* click on this button opens actual coin control dialog. If no Inputs are selected "automatically selected" is shown.
+>   * Change Checkbox
+>     ..* checked -> provide custom change address
+
 
 * Send 3 PPC from faucet2 to faucet1 to 1) create change 2) to confirm if in coin control, if no boxes
 [code]are selected -> coin control inactive (just as normal)[/code]
