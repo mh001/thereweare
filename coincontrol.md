@@ -1,20 +1,17 @@
 Test report for the coin control function of Peerunity
 ===================================================
 
-This report covers test results of the coin control feature of Peerunity v0.4.0 released at http://www.peercointalk.org/index.php?topic=2648.msg23426#msg23426
+This report covers test results of the coin control feature of Peerunity v0.4.0 released [here](http://www.peercointalk.org/index.php?topic=2648.msg23426#msg23426)
 
-The test follows the list of functions specified in _Yet another Coin Control Release_(https://bitcointalk.org/index.php?topic=144331.0) by cozz, using Peercoin testnet.
+The test follows the list of functions specified in [_Yet another Coin Control Release_ by cozz](https://bitcointalk.org/index.php?topic=144331.0).
 
-Test environment: windows 7 professional 32bit.
+The tests are done on windows 7 professional 32bit. Peerunity distribution peerunity-rc.zip is downloaded and unzip'ped in D:\bin
 
-Software to be tested: Download Peerunity distribution peerunity-rc.zip
-Unzip contents of peerunity.zip in D:\bin
-
-Run peerunity with the command.
+Run peerunity with a bat file with the command
 ```
 D:\bin\peerunity-rc\peerunity-rc-qt -conf=D:\bin\peerunity-rc\ppcoin.conf
 ```
-The config file D:\bin\peerunity-rc\ppcoin.conf has the following contents
+The config file D:\bin\peerunity-rc\ppcoin.conf has
 ```
 datadir=D:\bin\peerunity-rc
 testnet=1
@@ -30,11 +27,11 @@ daemon=1
 Coins and accounts:
 
 There are three addressed used in the test 
-   name | address | initial balance
-   -----|---------|----------------
-   test1 | mkLh7wYGYQiKVm8tLwCs9LusKF2y1gffm9 | 8.01PPC
-   test2 | n2LzA1UH46QZPdCGvN2NorPeqg1BbTuw4g | 2PPC
-   test3 | mpRAV4VSsxmKh5nRpDuQPquhdHPKu4xUuS | 7PPC
+   | name | address | initial balance |
+   | -----|---------|---------------- |
+   | test1 | mkLh7wYGYQiKVm8tLwCs9LusKF2y1gffm9 | 8.01PPC |
+   | test2 | n2LzA1UH46QZPdCGvN2NorPeqg1BbTuw4g | 2PPC |
+   | test3 | mpRAV4VSsxmKh5nRpDuQPquhdHPKu4xUuS | 7PPC |
 
 ### start peerunity
 
