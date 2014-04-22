@@ -86,7 +86,7 @@ These labels are tested **except I cannot verify priorities because I do not kno
 
 Low Output is yes when the amount is less than 0.01 PPC.
 
-* **Copy amount to clipboard by direct right clicking the labels does work**
+* **Copy amount to clipboard by direct right clicking the labels does not work.**
 
 >  * direct right click the labels for copy amount to clipboard
 
@@ -104,7 +104,7 @@ Low Output is yes when the amount is less than 0.01 PPC.
 > This is because you didnt select enough outputs to pay the fee.  
 > You always must select enough outputs, so that those outputs can pay the fee.
 
-* ** I do not know how to independently calculate transaction size so I didn't test transaction size calculation**
+* **I do not know how to independently calculate transaction size so I didn't test transaction size calculation**
 * Peercoin has a fixed transaction fee so the part about fee and free transaction calculation shouldn't apply.
 
 > **Calculation of fee and transaction size**  
@@ -121,14 +121,14 @@ Low Output is yes when the amount is less than 0.01 PPC.
 >     - any recipient must receive at least 0.01BTC  
 >     - change must be either zero or at least 0.01BTC  
 >  If you violate one rule you will see a min-fee and also the labels turn red:  
->  Bytes.Priority,Low Output,Change. Depending which rule you violated.
->  Those 4 labels also have tool tips explaining this.
+>  Bytes.Priority,Low Output,Change. Depending which rule you violated.  
+>  Those 4 labels also have tool tips explaining this.  
 >  Also remember that violating one of the first 2 rules means 0.0005 PER kilobyte min-fee,
 >  while violating one of the last 2 means 0.0005 min-fee only.
 
 
-[b]Summary[/b]
-The coin control implmented in peerunity_coin-control passed tests of all main function items [url=https://bitcointalk.org/index.php?topic=144331.0]specified by cozz[/url]. Three minor items did not pass test and are marked in red above. One untested item is marked in blue.
+** Summary **
+The coin control implmented in peerunity_coin-control passed tests of all main function items [url=https://bitcointalk.org/index.php?topic=144331.0]specified by cozz[/url]. Three minor items did not pass test, and one untested item, are marked in bold above. 
 
 Good job glv!
 
