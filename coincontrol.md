@@ -40,8 +40,10 @@ daemon=1
 
 > _Main_
 >   * Settings checkbox "Display coin control features (experts only!)" (default=no)
+>
 > _Tab Send coins_
->   * Button Inputs 
+>   * Button Inputs
+>
 >     ..* click on this button opens actual coin control dialog. If no Inputs are selected "automatically selected" is shown.
 >   * Change Checkbox
 >     ..* checked -> provide custom change address
