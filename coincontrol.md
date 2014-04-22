@@ -6,7 +6,6 @@ This report covers test results of the coin control feature of Peerunity v0.4.0 
 There are three addresses with initial balance used in the test, 
 * test1  mkLh7wYGYQiKVm8tLwCs9LusKF2y1gffm9  8.01PPC 
 * test2  n2LzA1UH46QZPdCGvN2NorPeqg1BbTuw4g  2PPC 
-* test3  mpRAV4VSsxmKh5nRpDuQPquhdHPKu4xUuS  7PPC 
 
 ### start peerunity
 
@@ -25,9 +24,9 @@ daemon=1
 genproclimit=1
 daemon=1
 ```
-(Note for future upgrade: with 0.9.1 btc wallet, datadir must be specified in the command line, not in the config file)
+(Note for future upgrade: with 0.9.1 btc wallet, datadir must be specified in the command line, not in the config file.)
 
-* peerunity-rc is started. In the debug window-> Information tab the "On testnet" box is in checked state. 
+* After peerunity-rc is started, in the debug window-> Information tab the "On testnet" box is in checked as expected. 
 * peerunit-rc successfully syncs with the testnet. "D:\bin\peerunity-rc\testnet" subdirectory is created with downloaded block chain.
 
 ### start coin control
