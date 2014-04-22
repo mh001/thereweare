@@ -3,13 +3,10 @@ Testing the coin control feature of Peerunity
 
 This report covers test results of the coin control feature of Peerunity v0.4.0 released [here](http://www.peercointalk.org/index.php?topic=2648.msg23426#msg23426). The test method used is basically clicking/typing on the GUI of Peerunity running on Peercoin testnet, and comparing the results with those specified in [_Yet another Coin Control Release_ by cozz](https://bitcointalk.org/index.php?topic=144331.0). The tests are done on windows 7 professional 32bit. Peerunity distribution peerunity-rc.zip is downloaded and unzip'ped in D:\bin
 
-There are three addressed used in the test 
-
-   | name | address | initial balance |
-   | ----- | --------- | ---------------- |
-   | test1 | mkLh7wYGYQiKVm8tLwCs9LusKF2y1gffm9 | 8.01PPC |
-   | test2 | n2LzA1UH46QZPdCGvN2NorPeqg1BbTuw4g | 2PPC |
-   | test3 | mpRAV4VSsxmKh5nRpDuQPquhdHPKu4xUuS | 7PPC |
+There are three addresses with initial balance used in the test, 
+* test1  mkLh7wYGYQiKVm8tLwCs9LusKF2y1gffm9  8.01PPC 
+* test2  n2LzA1UH46QZPdCGvN2NorPeqg1BbTuw4g  2PPC 
+* test3  mpRAV4VSsxmKh5nRpDuQPquhdHPKu4xUuS  7PPC 
 
 ### start peerunity
 
@@ -44,34 +41,31 @@ daemon=1
 > _Tab Send coins_
 >   * Button Inputs
 >
->     ..* click on this button opens actual coin control dialog. If no Inputs are selected "automatically selected" is shown.
+>     * click on this button opens actual coin control dialog. If no Inputs are selected "automatically selected" is shown.
 >   * Change Checkbox
->     ..* checked -> provide custom change address
+>     * checked -> provide custom change address
 
 
-* Send 3 PPC from faucet2 to faucet1 to 1) create change 2) to confirm if in coin control, if no boxes
-[code]are selected -> coin control inactive (just as normal)[/code]
-txid 8c1a65708126efb9c48535a4a1db049684745e78b72dd0f095e34151e9a346db
+* Send 1 PPC from test2 to test1 to 1) create change 2) create two outputs in test1. Results: test2 has 0.99PPC left and test1 has 9.01PPC, as shown by coin control window. (A strict virification can be done using a block explorer.)
+txid 94686d535fae9fc015b7e3a270123f437066c60f3c63b658774ffb60e530ee3a 
 
-In [i]Coin Control Dialog[/i] The following are confirmed
-[quote]
-[list]
-[li]Shows a list of all unspent outputs with two view modes
-[list]
-    [li]tree mode: outputs including change are grouped by wallet address[/li][/list]
-        tree can be opened showing the actual outputs for this wallet address including change
-        if change, the change bitcoin address is shown in column "address", otherwise the column "address" is empty, because its a direct output of the wallet address having the bitcoin address already shown in the parent node (same with label)
-    [list][li]list mode: simple list of all unspent outputs[/li]
-[/list]
-[/li][/list]
-[/quote]
+In _Coin Control Dialog_ The following are confirmed
+
+> 
+> * Shows a list of all unspent outputs with two view modes
+>
+>    * tree mode: outputs including change are grouped by wallet address[/li][/list]
+>       tree can be opened showing the actual outputs for this wallet address including change
+>       if change, the change bitcoin address is shown in column "address", otherwise the column "address" is empty, because its a direct output of the wallet address having the bitcoin address already shown in the parent node (same with label)
+>    * list mode: simple list of all unspent outputs
+>
 
 * Select faucet3 address in coin control and send 2PPC to faucet2. Examine the results in coin control confirming 
 [quote]
 [list]
 [li]select outputs by checkbox -> only the checked outputs are used when sending a transaction[/li][/list]
 [/quote]
-(a strict confirmation should come from a block explorer) txid 04494cd36def0b679dc264d8cf359089fcb38f9a32b8d0fc218f7fca57cc4901
+ txid 04494cd36def0b679dc264d8cf359089fcb38f9a32b8d0fc218f7fca57cc4901
 
 * Confirm functions of the following
 [quote]
