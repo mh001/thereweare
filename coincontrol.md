@@ -27,7 +27,7 @@ daemon=1
 ```
 (Note for future upgrade: with 0.9.1 btc wallet, datadir must be specified in the command line, not in the config file)
 
-* peerunity-rc is started. In the debug window, Information tab, "On testnet" box is in checked state. 
+* peerunity-rc is started. In the debug window-> Information tab the "On testnet" box is in checked state. 
 * peerunit-rc successfully syncs with the testnet. "D:\bin\peerunity-rc\testnet" subdirectory is created with downloaded block chain.
 
 ### start coin control
@@ -104,8 +104,8 @@ Low Output is yes when the amount is less than 0.01 PPC.
 > This is because you didnt select enough outputs to pay the fee.  
 > You always must select enough outputs, so that those outputs can pay the fee.
 
+
 * **I do not know how to independently calculate transaction size so I didn't test transaction size calculation**
-* Peercoin has a fixed transaction fee so the part about fee and free transaction calculation shouldn't apply.
 
 > **Calculation of fee and transaction size**  
 > The fee is calculated according to the fee set in the Settings menu.  
@@ -113,7 +113,9 @@ Low Output is yes when the amount is less than 0.01 PPC.
 > The formula is nBytesOutputs + (2 * 34) + 10. nBytesOutputs is the sum of selected outputs, 148 or 180 bytes per output, depending if compressed public key.  
 > Due to the inner workings of bitcoin the size per output is actually +/- 1 byte. Meaning the shown calculation is not always 100% correct.  
 > If you send exactly "selected minus fee" then you will not have change (1 output only). The transaction will then be 34 bytes smaller as what was calculated before.
->
+
+* Peercoin has a fixed transaction fee so this part below about free transaction calculation is irrelevant hence not tested. 
+
 > **Free Transactions**  
 > In order to be able to send a free transaction, you need to follow the rules:  
 >     - transaction size must be < 10000 bytes  
@@ -127,8 +129,10 @@ Low Output is yes when the amount is less than 0.01 PPC.
 >  while violating one of the last 2 means 0.0005 min-fee only.
 
 
-** Summary **
-The coin control implmented in peerunity_coin-control passed tests of all main function items [url=https://bitcointalk.org/index.php?topic=144331.0]specified by cozz[/url]. Three minor items did not pass test, and one untested item, are marked in bold above. 
+### Summary
+The coin control implmented in peerunity_coin-control passed tests of all main function items [specified by cozz](https://bitcointalk.org/index.php?topic=144331.0). Three minor items did not pass test, and one untested item, are marked in bold above.
 
-Good job glv!
+mhps
+2014-04-22
+
 
