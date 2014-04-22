@@ -40,22 +40,21 @@ daemon=1
 >
 > _Tab Send coins_
 >   * Button Inputs
->
 >     * click on this button opens actual coin control dialog. If no Inputs are selected "automatically selected" is shown.
 >   * Change Checkbox
 >     * checked -> provide custom change address
 
 
-* Send 1 PPC from test2 to test1 to 1) create change 2) create two outputs in test1. Results: test2 has 0.99PPC left and test1 has 9.01PPC, as shown by coin control window. (A strict virification can be done using a block explorer.)
-txid 94686d535fae9fc015b7e3a270123f437066c60f3c63b658774ffb60e530ee3a 
+* Send 1 PPC from test2 to test1 to 1) create change 2) create two outputs in test1. 
+  Results: test2 has 0.99PPC left and test1 has 9.01PPC, as shown by coin control window. (A strict verification can be done using a block explorer.)
+  txid 94686d535fae9fc015b7e3a270123f437066c60f3c63b658774ffb60e530ee3a 
 
 In _Coin Control Dialog_ The following are confirmed
 
 > 
 > * Shows a list of all unspent outputs with two view modes
->
->    * tree mode: outputs including change are grouped by wallet address[/li][/list]
->       tree can be opened showing the actual outputs for this wallet address including change
+>    * tree mode: outputs including change are grouped by wallet address  
+>       tree can be opened showing the actual outputs for this wallet address including change  
 >       if change, the change bitcoin address is shown in column "address", otherwise the column "address" is empty, because its a direct output of the wallet address having the bitcoin address already shown in the parent node (same with label)
 >    * list mode: simple list of all unspent outputs
 >
