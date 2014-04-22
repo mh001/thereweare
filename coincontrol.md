@@ -44,14 +44,17 @@ daemon=1
 >   * Change Checkbox
 >     * checked -> provide custom change address
 
+### _Coin Control Dialog_ 
 
 * Send 1 PPC from test2 to test1 to 1) create change 2) create two outputs in test1.  
   Results: test2 has 0.99PPC left and test1 has 9.01PPC, as shown by coin control window. (A strict verification can be done using a block explorer.)  
   txid 94686d535fae9fc015b7e3a270123f437066c60f3c63b658774ffb60e530ee3a  
   This confirms:
+
 >  * select outputs by checkbox -> only the checked outputs are used when sending a transaction  
 >    if none are selected -> coin control inactive (just as normal)
-In _Coin Control Dialog_ The following are confirmed
+
+* Confirmed:
 
 > 
 > * Shows a list of all unspent outputs with two view modes
@@ -62,6 +65,7 @@ In _Coin Control Dialog_ The following are confirmed
 >
 
 * The following functions are all verified
+
 >  * check/uncheck all by clicking on "(Un)select all"
 >  * sort colums
 >  * tooltip available in column list mode in column label for the change (shows from which address the change came from)
@@ -69,6 +73,7 @@ In _Coin Control Dialog_ The following are confirmed
 Note for the last item: the tooltip not only shows in list mode but also in tree mode.
 
 * This is verified **except I do not see "lock" and "unlock"**
+
 >  * Context menu  
 >    Copy to clipboard (amount,label,address,transaction id,lock,unlock)[/list]
 
