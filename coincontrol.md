@@ -45,10 +45,12 @@ daemon=1
 >     * checked -> provide custom change address
 
 
-* Send 1 PPC from test2 to test1 to 1) create change 2) create two outputs in test1. 
-  Results: test2 has 0.99PPC left and test1 has 9.01PPC, as shown by coin control window. (A strict verification can be done using a block explorer.)
-  txid 94686d535fae9fc015b7e3a270123f437066c60f3c63b658774ffb60e530ee3a 
-
+* Send 1 PPC from test2 to test1 to 1) create change 2) create two outputs in test1.  
+  Results: test2 has 0.99PPC left and test1 has 9.01PPC, as shown by coin control window. (A strict verification can be done using a block explorer.)  
+  txid 94686d535fae9fc015b7e3a270123f437066c60f3c63b658774ffb60e530ee3a  
+  This confirms:
+>  * select outputs by checkbox -> only the checked outputs are used when sending a transaction  
+>    if none are selected -> coin control inactive (just as normal)
 In _Coin Control Dialog_ The following are confirmed
 
 > 
@@ -59,31 +61,16 @@ In _Coin Control Dialog_ The following are confirmed
 >    * list mode: simple list of all unspent outputs
 >
 
-* Select faucet3 address in coin control and send 2PPC to faucet2. Examine the results in coin control confirming 
-[quote]
-[list]
-[li]select outputs by checkbox -> only the checked outputs are used when sending a transaction[/li][/list]
-[/quote]
- txid 04494cd36def0b679dc264d8cf359089fcb38f9a32b8d0fc218f7fca57cc4901
+* The following functions are all verified
+>  * check/uncheck all by clicking on "(Un)select all"
+>  * sort colums
+>  * tooltip available in column list mode in column label for the change (shows from which address the change came from)
 
-* Confirm functions of the following
-[quote]
-[list]
-[li]check/uncheck all by clicking on "(Un)select all"[/li]
-[li]sort colums[/li]
-[li]tooltip available in column list mode in column label for the change (shows from which address the change came from)[/li]
-[/list]
-[/quote]
 Note for the last item: the tooltip not only shows in list mode but also in tree mode.
 
-* The following are verified [color=red]except I do not see "lock" and "unlock"[/color]
-[quote]
-[list]
-[li]Context menu
-[list]Copy to clipboard (amount,label,address,transaction id,lock,unlock)[/list]
-[/li]
-[/list]
-[/quote]
+* This is verified **except I do not see "lock" and "unlock"**
+>  * Context menu  
+>    Copy to clipboard (amount,label,address,transaction id,lock,unlock)[/list]
 
 These labels are tested [color=blue]except I cannot verify priorities because I do not know how priority levels are assigned[/color]. 
 [quote]
