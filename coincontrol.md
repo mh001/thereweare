@@ -76,7 +76,7 @@ Note for the last item: the tooltip not only shows in list mode but also in tree
 >  * Context menu  
 >    Copy to clipboard (amount,label,address,transaction id,lock,unlock)
 
-These labels are tested **except I cannot verify priorities because I do not know how priority levels are assigned**. 
+* These labels are tested **except I cannot verify priorities because I do not know how priority levels are assigned**. 
 
 >  * Labels at the top  
 >    Quantity: number of selected outputs  
