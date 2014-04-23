@@ -1,4 +1,4 @@
-Testing the coin control feature of Peerunity
+Test Report: Coin Control
 ===================================================
 
 This report covers test results of the coin control feature of Peerunity v0.4.0 released [here](http://www.peercointalk.org/index.php?topic=2648.msg23426#msg23426). The test method used is basically clicking/typing on the GUI of Peerunity running on Peercoin testnet, and comparing the results with those specified in [_Yet another Coin Control Release_ by cozz](https://bitcointalk.org/index.php?topic=144331.0). The tests are done on windows 7 professional 32bit. Peerunity distribution peerunity-rc.zip is downloaded and unzip'ped in D:\bin
@@ -26,7 +26,7 @@ daemon=1
 ```
 (Note for future upgrade: with 0.9.1 btc wallet, datadir must be specified in the command line, not in the config file.)
 
-* After peerunity-rc is started, in the debug window-> Information tab the "On testnet" box is in checked as expected. 
+* After peerunity-rc is started, in the debug->Information the "On testnet" box is in checked as expected. 
 * peerunit-rc successfully syncs with the testnet. "D:\bin\peerunity-rc\testnet" subdirectory is created with downloaded block chain.
 
 ### start coin control
@@ -85,7 +85,7 @@ These labels are tested **except I cannot verify priorities because I do not kno
 
 Low Output is yes when the amount is less than 0.01 PPC.
 
-* **Copy amount to clipboard by direct right clicking the labels does not work.**
+* **Copy amount to clipboard by direct right clicking the labels does not work. Right clicking the values works.**
 
 >  * direct right click the labels for copy amount to clipboard
 
