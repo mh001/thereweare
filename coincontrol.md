@@ -76,7 +76,7 @@ Note for the last item: the tooltip not only shows in list mode but also in tree
 >  * Context menu  
 >    Copy to clipboard (amount,label,address,transaction id,lock,unlock)
 
-* These labels are tested **except I cannot verify priorities because I do not know how priority levels are assigned**. 
+* These labels are tested **except that priorities are not verified because I do not know how priority levels for Peercoins and Peershares are defined**. 
 
 >  * Labels at the top  
 >    Quantity: number of selected outputs  
@@ -90,7 +90,7 @@ Note for the last item: the tooltip not only shows in list mode but also in tree
 
 Low Output is yes when the amount is less than 0.01 PPC.
 
-* **Copy amount to clipboard by direct right clicking the labels does not work. Right clicking the values works.**
+* **Copy amount to clipboard by direct right clicking the _labels_ does not work. However right clicking the _values_ works.**
 
 >  * direct right click the labels for copy amount to clipboard
 
