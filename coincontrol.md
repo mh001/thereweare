@@ -5,7 +5,8 @@ This report covers test results of the coin control feature of Peerunity v0.4.0 
 
 There are three addresses with initial balance used in the test, 
 * test1  mkLh7wYGYQiKVm8tLwCs9LusKF2y1gffm9  8.01PPC 
-* test2  n2LzA1UH46QZPdCGvN2NorPeqg1BbTuw4g  2PPC 
+* test2  n2LzA1UH46QZPdCGvN2NorPeqg1BbTuw4g  2PPC
+* test3  mpRAV4VSsxmKh5nRpDuQPquhdHPKu4xUuS  7PPC
 
 ### start peerunity
 
@@ -32,7 +33,7 @@ daemon=1
 ### start coin control
 
 * In settings->options->display check "Display coin control features (expert only!)".
-* The following GUI functions are verified (I did not check if custom change address works)
+* The following GUI functions are verified (custom change address is tested below)
 
 > _Main_
 >   * Settings checkbox "Display coin control features (experts only!)" (default=no)
@@ -52,7 +53,11 @@ daemon=1
 >  * select outputs by checkbox -> only the checked outputs are used when sending a transaction  
 >    if none are selected -> coin control inactive (just as normal)
 
-* Confirmed:
+* Send 5 PPC from test1 to test2 using test3 as the custom change address.  
+  Results: test1 has 1 PPC test2 has 5.99 PPC test3 has 10 PPC, as expected. The custom change address function is verified. txid eed4baecbcaedcf442647103fc8a18812dce2b4c852ee447b473f157c41cb837
+
+
+* These are all confirmed:
 
 > 
 >  * Shows a list of all unspent outputs with two view modes
@@ -104,7 +109,7 @@ Low Output is yes when the amount is less than 0.01 PPC.
 > You always must select enough outputs, so that those outputs can pay the fee.
 
 
-* **I do not know how to independently calculate transaction size so I didn't test transaction size calculation**
+* **I do not know how to independently calculate transaction size so test transaction size calculation is not tested.**
 
 > **Calculation of fee and transaction size**  
 > The fee is calculated according to the fee set in the Settings menu.  
@@ -129,9 +134,9 @@ Low Output is yes when the amount is less than 0.01 PPC.
 
 
 ### Summary
-The coin control implmented in peerunity_coin-control passed tests of all main function items [specified by cozz](https://bitcointalk.org/index.php?topic=144331.0). Three minor items that did not pass, and two minor untested items, are marked in bold above.
+The coin control implmented in peerunity_coin-control passed tests of all main function items [specified by cozz](https://bitcointalk.org/index.php?topic=144331.0). Two minor items that did not pass, and two minor untested items, are marked in bold above.
 
-### history
+### History
 Test reprt for an early build of peerunity_coin-control is [here](http://www.peercointalk.org/index.php?topic=2699.msg23386#msg23386).
 
 mhps
