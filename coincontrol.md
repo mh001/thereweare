@@ -10,7 +10,7 @@ There are three addresses with initial balance used in the test,
 
 ### start peerunity
 
-* Run peerunity with a bat file that has the command
+1. Run peerunity with a bat file that has the command
 ```
 D:\bin\peerunity-rc\peerunity-rc-qt -conf=D:\bin\peerunity-rc\ppcoin.conf
 ```
@@ -32,8 +32,8 @@ daemon=1
 
 ### start coin control
 
-* In settings->options->display check "Display coin control features (expert only!)".
-* The following GUI functions are verified (custom change address is tested below)
+1. In settings->options->display check "Display coin control features (expert only!)".
+1. The following GUI functions are verified (custom change address is tested below)
 
 > _Main_
 >   * Settings checkbox "Display coin control features (experts only!)" (default=no)
@@ -46,7 +46,7 @@ daemon=1
 
 ### _Coin Control Dialog_ 
 
-* Send 1 PPC from test2 to test1 to 1) create change 2) create two outputs in test1.  
+1. Send 1 PPC from test2 to test1 to 1) create change 2) create two outputs in test1.  
   Results: test2 has 0.99PPC left and test1 has 9.01PPC, as shown by coin control window. (A strict verification can be done using a block explorer. txid 94686d535fae9fc015b7e3a270123f437066c60f3c63b658774ffb60e530ee3a )  
   This confirms:
 
@@ -57,7 +57,7 @@ daemon=1
   Results: test1 has 1 PPC test2 has 5.99 PPC test3 has 10 PPC, as expected. The custom change address function is verified. txid eed4baecbcaedcf442647103fc8a18812dce2b4c852ee447b473f157c41cb837
 
 
-* These are all confirmed:
+1. These are all confirmed:
 
 > 
 >  * Shows a list of all unspent outputs with two view modes
@@ -71,7 +71,7 @@ daemon=1
 
 Note for the last item: the tooltip not only shows in list mode but also in tree mode.
 
-* This is verified **except I do not see "lock" and "unlock"**
+1. This is verified **except I do not see "lock" and "unlock"**
 
 >  * Context menu  
 >    Copy to clipboard (amount,label,address,transaction id,lock,unlock)
@@ -90,11 +90,11 @@ These labels are tested **except I cannot verify priorities because I do not kno
 
 Low Output is yes when the amount is less than 0.01 PPC.
 
-* **Copy amount to clipboard by direct right clicking the labels does not work. Right clicking the values works.**
+1. **Copy amount to clipboard by direct right clicking the labels does not work. Right clicking the values works.**
 
 >  * direct right click the labels for copy amount to clipboard
 
-* The following are verified except that "The amount exceeds your balance" is "Insufficient funds!"
+1. The following are verified except that "The amount exceeds your balance" is "Insufficient funds!"
 
 > **Selection**  
 > In this version of coin control, all selected outputs are going into the transaction for sure!!
@@ -109,7 +109,7 @@ Low Output is yes when the amount is less than 0.01 PPC.
 > You always must select enough outputs, so that those outputs can pay the fee.
 
 
-* **I do not know how to independently calculate transaction size so test transaction size calculation is not tested.**
+1. **I do not know how to independently calculate transaction size so test transaction size calculation is not tested.**
 
 > **Calculation of fee and transaction size**  
 > The fee is calculated according to the fee set in the Settings menu.  
@@ -118,7 +118,7 @@ Low Output is yes when the amount is less than 0.01 PPC.
 > Due to the inner workings of bitcoin the size per output is actually +/- 1 byte. Meaning the shown calculation is not always 100% correct.  
 > If you send exactly "selected minus fee" then you will not have change (1 output only). The transaction will then be 34 bytes smaller as what was calculated before.
 
-* Peercoin has a fixed transaction fee so this part below about free transaction calculation is irrelevant hence not tested. 
+1. Peercoin has a fixed transaction fee so this part below about free transaction calculation is irrelevant hence not tested. 
 
 > **Free Transactions**  
 > In order to be able to send a free transaction, you need to follow the rules:  
