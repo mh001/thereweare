@@ -129,7 +129,7 @@ Low Output is yes when the amount is less than 0.01 PPC.
 
 
 ### Summary
-The coin control implmented in peerunity_coin-control passed tests of all main function items [specified by cozz](https://bitcointalk.org/index.php?topic=144331.0). Three minor items that did not pass, and one untested item, are marked in bold above.
+The coin control implmented in peerunity_coin-control passed tests of all main function items [specified by cozz](https://bitcointalk.org/index.php?topic=144331.0). Three minor items that did not pass, and two minor untested items, are marked in bold above.
 
 mhps
 2014-04-22
