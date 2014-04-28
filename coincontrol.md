@@ -136,9 +136,10 @@ Low Output is yes when the amount is less than 0.01 PPC.
 >  Also remember that violating one of the first 2 rules means 0.0005 PER kilobyte min-fee,
 >  while violating one of the last 2 means 0.0005 min-fee only.
 
-## Features Related to POS
+## Features Related to Proof-of-Stake
 
 * Test features [added](https://bitcointalk.org/index.php?topic=276948.msg2980120#msg2980120) by YAC developer for POS output. Pass. 
+
 > graying-out (checkbox can't be ticked) and setting a red background of immature PoS coins in the Coin Control view.
 
 ### Summary
