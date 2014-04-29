@@ -75,7 +75,7 @@ daemon=1
 
 Note for the last item: the tooltip not only shows in list mode but also in tree mode.
 
-* This is verified **except I do not see "lock" and "unlock"**
+* This is verified except [input locking is not supported](https://bitcointalk.org/index.php?topic=276606.msg2958814#msg2958814) as of v0.4.
 
 >  * Context menu  
 >    Copy to clipboard (amount,label,address,transaction id,lock,unlock)
@@ -143,12 +143,12 @@ Low Output is yes when the amount is less than 0.01 PPC.
 > graying-out (checkbox can't be ticked) and setting a red background of immature PoS coins in the Coin Control view.
 
 ## Summary
-The coin control implmented in peerunity_coin-control passed tests of all main function items [specified by cozz](https://bitcointalk.org/index.php?topic=144331.0). Two minor items that did not pass, and two minor untested items, are marked in bold above.
+The coin control implmented in peerunity_coin-control passed tests of all main function items [specified by cozz](https://bitcointalk.org/index.php?topic=144331.0). One minor items that did not pass, and two minor untested items, are marked in bold above.
 
 ## History
 Test reprt for an early build of peerunity_coin-control is [here](http://www.peercointalk.org/index.php?topic=2699.msg23386#msg23386).
 
 mhps
-2014-04-27
+2014-04-29
 
 
