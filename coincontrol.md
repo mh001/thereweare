@@ -113,7 +113,7 @@ Low Output is yes when the amount is less than 0.01 PPC.
 > You always must select enough outputs, so that those outputs can pay the fee.
 
 
-* **I do not know how to independently calculate transaction size so test transaction size calculation is not tested.**
+* **I do not know how to independently calculate transaction size so transaction size calculation is not tested.**
 
 > **Calculation of fee and transaction size**  
 > The fee is calculated according to the fee set in the Settings menu.  
@@ -143,7 +143,7 @@ Low Output is yes when the amount is less than 0.01 PPC.
 > graying-out (checkbox can't be ticked) and setting a red background of immature PoS coins in the Coin Control view.
 
 ## Summary
-The coin control implmented in peerunity_coin-control passed tests of all main function items [specified by cozz](https://bitcointalk.org/index.php?topic=144331.0). One minor items that did not pass, and two minor untested items, are marked in bold above.
+The coin control implmented in peerunity-rc passed tests of all main function items [specified by cozz](https://bitcointalk.org/index.php?topic=144331.0). One minor item that did not pass, and two minor untested items, are marked in bold above.
 
 ## History
 Test reprt for an early build of peerunity_coin-control is [here](http://www.peercointalk.org/index.php?topic=2699.msg23386#msg23386).
